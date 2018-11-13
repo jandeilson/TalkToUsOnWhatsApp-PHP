@@ -9,23 +9,29 @@ Through a modal window with a very simple form, you can request basic and detail
 
 Basic knowledge of programming language like JS and PHP, server file management and MySQL database.
 
-To start using, you need to create a database, use the *clients__TalkToUsOnWhatsApp_JDeS.sql* file to create default structure of table in your database, add the information to your database in *conn.php* file, and then in the file *assets/js/TalkToUsOnWhatsApp_JDeS.js* change ```var TalkToUsOnWhatsApp_url = "https://yourdomain/TalkToUsOnWhatsApp";``` according to the directory you put this script.
+To start using, you need to create a database, use the *clients__TalkToUsOnWhatsApp_JDeS.sql* file to create default structure of table in your database, add the information to your database in *conn.php* file, and then in the file *assets/js/TalkToUsOnWhatsApp_JDeS.js* change:
+```js
+var TalkToUsOnWhatsApp_url = "//yourdomain/talktousonwhatsapp";
+``` 
+according to the directory you put this script.
 
-About email configuration, I use SendGrid, but you can chose any other.
+About email configuration, I used SendGrid, but you can chose any other way.
 
 ## How it works
 
-TalkToUsOnWhatsApp has a dashboard *(https://yourdomain/TalkToUsOnWhatsApp/dashboard.html)* for you to register clients and generates a unique code to be used on the customers' website. This information serves to record in the database who will be directed the information collected by the modal window form that will be on the client site.
+TalkToUsOnWhatsApp has a dashboard *(//yourdomain/TalkToUsOnWhatsApp/dashboard.html)* for you to register clients and generates a unique code to be used on the customers' website. This information serves to record in the database who will be directed the information collected by the modal window form that will be on the client site.
 
 In the Dashboard fill in your client's information, generate your script code, add it somewhere on your client's website and you're done, your modal will be displayed, that's all.
 
 Something like that will be generated:
-```<script> var TalkToUsOnWhatsAppClientToken_JDeS = "0cbc6611f5540bd0809a388dc95a615b"; (function() { var js, el; js = document.createElement("script"); el = document.querySelector("html"); js.src="yourdomain/TalkToUsOnWhatsApp/TalkToUsOnWhatsApp_JDeS.js"; el.insertBefore(js, el.childNodes[0]); })(); </script>```
+```html
+<script> var TalkToUsOnWhatsAppClientToken_JDeS = "0cbc6611f5540bd0809a388dc95a615b"; (function() { var js, el; js = document.createElement("script"); el = document.querySelector("html"); js.src="//yourdomain/TalkToUsOnWhatsApp/TalkToUsOnWhatsApp_JDeS.js"; el.insertBefore(js, el.childNodes[0]); })(); </script>
+```
 
-**The script has two settings, just choose from the dashboard:**
+**The script has two different settings:**
 
--Basic - The form will request Name;
--Advanced - The form will request Name, Phone and Message.
+* Basic - The form will request Name;
+* Advanced - The form will request Name, Phone and Message.
 
 Your have some other stuffs to play, just custom this script like you want and need. Do not forget to share!
 
