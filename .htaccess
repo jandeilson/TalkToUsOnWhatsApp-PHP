@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+    RewriteRule    ^TalkToUsOnWhatsApp_JDeS.js/?$    assets/js/TalkToUsOnWhatsApp_JDeS.js    [NC,L]
+</IfModule>

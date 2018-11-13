@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - talk to us on WhatsApp (modal window)</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.dashboard.css" />
+
+</head>
+
+<body>
+    <header id="TalkToUsOnWhatsApp" class="text-center">
+        <h1>talk to us on WhatsApp</h1>
+        <h6>(modal window)</h6>
+    </header>
+    <section id="client" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Modal information</h4>
+                    <hr>
+                    <form action="config/processDashboard.php" method="POST" class="addClientForm">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="nomeClient">Client</label>
+                                    <input type="hidden" class="form-control" name="token" id="tokenClient">
+                                    <input type="text" class="form-control" name="name" id="nameClient">
+
+                                    <div id="name-group"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="phoneClient">Phone</label>
+                                    <input type="text" class="form-control" name="phone" id="phoneClient">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group select-group">
+                                    <label for="configClient">Configuration</label>
+                                    <select class="form-control" name="config">
+                                        <option selected="" value="0">Basic</option>
+                                        <option value="1">Advanced</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emailClient">Email</label>
+                            <input type="email" class="form-control" name="email" id="emailClient">
+
+                            <div id="email-group"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="messageClient">Message</label>
+                            <textarea class="form-control" rows="5" name="message" id="messageClient"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block btn-primary">Create</button>
+                    </form>
+                </div>
+                <div class="col-sm-6">
+                    <code class="prettyprint" id="scriptClient"></code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            by JDeS (<a href="https://github.com/jandeilson" title="Jandeilson De Sousa">github.com/jandeilson</a>)
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.md5.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/jquery.mask.min.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+</body>
+
+</html>

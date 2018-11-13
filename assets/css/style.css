@@ -1,0 +1,170 @@
+/*******************************
+talk to us on WhatsApp (modal window) by Jandeilson De Sousa aka JDeS
+https://github.com/jandeilson
+********************************/
+
+/* default */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* modal */
+.btn-TalkToUsOnWhatsApp {
+    background: #00E676 !important;
+    margin: 0px !important;
+    border: 0 !important;
+    position: fixed !important;
+    top: 0px !important;
+    bottom: 0px !important;
+    width: 100% !important;
+    height: auto !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    resize: none !important;
+    padding: 10px 0px !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    text-align: left !important;
+    letter-spacing: 1px !important;
+}
+.icon-whatsapp {
+    float: left;
+    margin: 0px 9px;
+    padding: 8px;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMDggMzA4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMDggMzA4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnIGlkPSJYTUxJRF80NjhfIj4KCTxwYXRoIGlkPSJYTUxJRF80NjlfIiBkPSJNMjI3LjkwNCwxNzYuOTgxYy0wLjYtMC4yODgtMjMuMDU0LTExLjM0NS0yNy4wNDQtMTIuNzgxYy0xLjYyOS0wLjU4NS0zLjM3NC0xLjE1Ni01LjIzLTEuMTU2ICAgYy0zLjAzMiwwLTUuNTc5LDEuNTExLTcuNTYzLDQuNDc5Yy0yLjI0MywzLjMzNC05LjAzMywxMS4yNzEtMTEuMTMxLDEzLjY0MmMtMC4yNzQsMC4zMTMtMC42NDgsMC42ODctMC44NzIsMC42ODcgICBjLTAuMjAxLDAtMy42NzYtMS40MzEtNC43MjgtMS44ODhjLTI0LjA4Ny0xMC40NjMtNDIuMzctMzUuNjI0LTQ0Ljg3Ny0zOS44NjdjLTAuMzU4LTAuNjEtMC4zNzMtMC44ODctMC4zNzYtMC44ODcgICBjMC4wODgtMC4zMjMsMC44OTgtMS4xMzUsMS4zMTYtMS41NTRjMS4yMjMtMS4yMSwyLjU0OC0yLjgwNSwzLjgzLTQuMzQ4YzAuNjA3LTAuNzMxLDEuMjE1LTEuNDYzLDEuODEyLTIuMTUzICAgYzEuODYtMi4xNjQsMi42ODgtMy44NDQsMy42NDgtNS43OWwwLjUwMy0xLjAxMWMyLjM0NC00LjY1NywwLjM0Mi04LjU4Ny0wLjMwNS05Ljg1NmMtMC41MzEtMS4wNjItMTAuMDEyLTIzLjk0NC0xMS4wMi0yNi4zNDggICBjLTIuNDI0LTUuODAxLTUuNjI3LTguNTAyLTEwLjA3OC04LjUwMmMtMC40MTMsMCwwLDAtMS43MzIsMC4wNzNjLTIuMTA5LDAuMDg5LTEzLjU5NCwxLjYwMS0xOC42NzIsNC44MDIgICBjLTUuMzg1LDMuMzk1LTE0LjQ5NSwxNC4yMTctMTQuNDk1LDMzLjI0OWMwLDE3LjEyOSwxMC44NywzMy4zMDIsMTUuNTM3LDM5LjQ1M2MwLjExNiwwLjE1NSwwLjMyOSwwLjQ3LDAuNjM4LDAuOTIyICAgYzE3Ljg3MywyNi4xMDIsNDAuMTU0LDQ1LjQ0Niw2Mi43NDEsNTQuNDY5YzIxLjc0NSw4LjY4NiwzMi4wNDIsOS42OSwzNy44OTYsOS42OWMwLjAwMSwwLDAuMDAxLDAsMC4wMDEsMCAgIGMyLjQ2LDAsNC40MjktMC4xOTMsNi4xNjYtMC4zNjRsMS4xMDItMC4xMDVjNy41MTItMC42NjYsMjQuMDItOS4yMiwyNy43NzUtMTkuNjU1YzIuOTU4LTguMjE5LDMuNzM4LTE3LjE5OSwxLjc3LTIwLjQ1OCAgIEMyMzMuMTY4LDE3OS41MDgsMjMwLjg0NSwxNzguMzkzLDIyNy45MDQsMTc2Ljk4MXoiIGZpbGw9IiNGRkZGRkYiLz4KCTxwYXRoIGlkPSJYTUxJRF80NzBfIiBkPSJNMTU2LjczNCwwQzczLjMxOCwwLDUuNDU0LDY3LjM1NCw1LjQ1NCwxNTAuMTQzYzAsMjYuNzc3LDcuMTY2LDUyLjk4OCwyMC43NDEsNzUuOTI4TDAuMjEyLDMwMi43MTYgICBjLTAuNDg0LDEuNDI5LTAuMTI0LDMuMDA5LDAuOTMzLDQuMDg1QzEuOTA4LDMwNy41OCwyLjk0MywzMDgsNCwzMDhjMC40MDUsMCwwLjgxMy0wLjA2MSwxLjIxMS0wLjE4OGw3OS45Mi0yNS4zOTYgICBjMjEuODcsMTEuNjg1LDQ2LjU4OCwxNy44NTMsNzEuNjA0LDE3Ljg1M0MyNDAuMTQzLDMwMC4yNywzMDgsMjMyLjkyMywzMDgsMTUwLjE0M0MzMDgsNjcuMzU0LDI0MC4xNDMsMCwxNTYuNzM0LDB6ICAgIE0xNTYuNzM0LDI2OC45OTRjLTIzLjUzOSwwLTQ2LjMzOC02Ljc5Ny02NS45MzYtMTkuNjU3Yy0wLjY1OS0wLjQzMy0xLjQyNC0wLjY1NS0yLjE5NC0wLjY1NWMtMC40MDcsMC0wLjgxNSwwLjA2Mi0xLjIxMiwwLjE4OCAgIGwtNDAuMDM1LDEyLjcyNmwxMi45MjQtMzguMTI5YzAuNDE4LTEuMjM0LDAuMjA5LTIuNTk1LTAuNTYxLTMuNjQ3Yy0xNC45MjQtMjAuMzkyLTIyLjgxMy00NC40ODUtMjIuODEzLTY5LjY3NyAgIGMwLTY1LjU0Myw1My43NTQtMTE4Ljg2NywxMTkuODI2LTExOC44NjdjNjYuMDY0LDAsMTE5LjgxMiw1My4zMjQsMTE5LjgxMiwxMTguODY3ICAgQzI3Ni41NDYsMjE1LjY3OCwyMjIuNzk5LDI2OC45OTQsMTU2LjczNCwyNjguOTk0eiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+    background-repeat:  no-repeat;
+}
+#modal {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top:-50%;
+    width: 320px !important;
+    box-sizing:border-box;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+#modal:target {
+    opacity: 1;
+    top: 128px;
+    visibility: visible;
+}
+#modal .header,#modal .footer {
+    background:  #ffffff;
+    border-radius: 16px 16px 0 0;
+}
+#modal .footer {
+    border:none;
+    border-radius: 0 0 16px 16px;
+}
+#modal h2 {
+    margin:0;
+}
+#modal .btn {
+    text-decoration:  none;
+    text-transform:  uppercase;
+    color: rgba(127, 127, 127, 0.30);
+    float: right;
+    font-weight:  bold;
+}
+#modal .copy,#modal .header, #modal .footer {
+    padding: 15px 15px 2px 15px;
+}
+.modal-content {
+    position: absolute;
+    top: 128px;
+    width:  320px !important;
+    background: #ffffff;
+    z-index: 20;
+    box-shadow: 0 5px 20px rgba(0,0,0,.25);
+    border-radius: 24px;
+}
+#modal .copy {
+    background: #fff;
+}
+#modal .overlay {
+    background-color: #000;
+    background: rgba(0,0,0,.5);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.logo {
+    width: 100px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -64px;
+}
+h3.tittle {
+    color: #55CD6C;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align:  center;
+    margin: 30px 0 0 0;
+}
+.field {
+    width: 100%;
+    border-radius: 50px;
+    margin: 5px 0;
+    padding: 12px;
+    background: #F2F2F2;
+    outline: 0;
+    color: #424242;
+    border: 1px solid #dedede;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.field:focus {
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.submit {
+    display: inline-block;
+    border-radius: 100%;
+    padding: 6px 6px;
+    border: none;
+    background-color: #1978D6;
+    cursor: pointer;
+    outline:  0;
+    position:  absolute;
+    right: 18px;
+    margin: 5px 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.submit:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.icon-send {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+}
+.icon-loading {
+    display: none;
+    width: 32px;
+    height: 32px;
+}
+
+.divisor {
+    border: 1px solid #f2f2f2;
+    border-radius:  100%;
+    margin: 10px 0;
+}
