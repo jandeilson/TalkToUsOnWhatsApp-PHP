@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `clients__TalkToUsOnWhatsApp_JDeS` (
   `config`   int(10) NOT NULL,
   `date`     datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=165 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 
 INSERT INTO `clients__TalkToUsOnWhatsApp_JDeS` (`id`, `name`, `token`, `phone`, `email`, `message`, `config`, `date`) VALUES

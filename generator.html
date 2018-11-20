@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard - talk to us on WhatsApp (modal window)</title>
+    <title>Generator - talk to us on WhatsApp (modal window)</title>
 
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.dashboard.css" />
+    <link rel="stylesheet" href="assets/css/style.generator.css" />
 
 </head>
 
@@ -23,7 +23,7 @@
                 <div class="col-sm-6">
                     <h4>Modal information</h4>
                     <hr>
-                    <form action="config/processDashboard.php" method="POST" class="addClientForm">
+                    <form action="config/processGenerator.php" method="POST" class="addClientForm">
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="form-group">
@@ -62,7 +62,7 @@
                             <label for="messageClient">Message</label>
                             <textarea class="form-control" rows="5" name="message" id="messageClient"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-block btn-primary">Create</button>
+                        <button type="submit" class="btn btn-block btn-primary">Generate</button>
                     </form>
                 </div>
                 <div class="col-sm-6">
@@ -74,14 +74,14 @@
 
     <footer>
         <div>
-            by JDeS (<a href="https://github.com/jandeilson" title="Jandeilson De Sousa">github.com/jandeilson</a>)
+            by JDeS (<a href="https://jandeilson.com" title="Jandeilson De Sousa">jandeilson.com</a>)
         </div>
     </footer>
 
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.md5.js"></script>
-    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/generator.js"></script>
     <script src="assets/js/jquery.mask.min.js"></script>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
