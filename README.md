@@ -14,11 +14,15 @@ Through a modal window with a very simple form, you can request basic and detail
 
 To start using, you need to create a database, use the *clients__TalkToUsOnWhatsApp_JDeS.sql* file to create default structure of table in your database, add connection informations to your database in *conn.php* file, and then in the file *assets/js/TalkToUsOnWhatsApp_JDeS.js* change:
 ```js
-var TalkToUsOnWhatsApp_url = "//yourdomain/talktousonwhatsapp";
+var TalkToUsOnWhatsApp_url = "//yourdomain/TalkToUsOnWhatsApp";
 ```
 *replace //yourdomain according to the directory you put this script.*
 
+*Do not forget to set up directory permissions correctly. 755 directories and 644 files*
+
 About email configuration, I used SendGrid, so in *config/processWhatsApp_0(and 1).php* have script ready to communicate via API, just include your SendGrid API Key. If you want, can chose any other way.
+
+
 
 ## How it works
 

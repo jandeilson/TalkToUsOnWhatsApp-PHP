@@ -25,7 +25,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'config/processDashboard.php',
+            url: 'config/processGenerator.php',
             data: formData,
             dataType: 'json'
         })

@@ -1,7 +1,7 @@
 // talk to us on WhatsApp (modal window)
 
 var TalkToUsOnWhatsApp_parser = new DOMParser();
-var TalkToUsOnWhatsApp_url = "//yourdomain/talktousonwhatsapp"; // your script directory url
+var TalkToUsOnWhatsApp_url = "//yourdomain/TalkToUsOnWhatsApp"; // your script directory url
 
 
 var xhr = new XMLHttpRequest();
